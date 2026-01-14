@@ -1,9 +1,9 @@
-# StandardID Japan — Studio-Quality ID Photos, Privacy-First
+# Japan ID Photo — Studio-Quality ID Photos, Privacy-First
 
 > **Born from real necessity, crafted for precision.**  
 > **Official Site:** [https://jid.torus-studio.tech](https://jid.torus-studio.tech)
 
-StandardID Japan is a high-utility, browser-based ID photo generator specifically designed to meet the strict administrative requirements of Japan. From visas to My Number cards, get perfect results without compromising your privacy.
+Japan ID Photo is a high-utility, browser-based ID photo generator specifically designed to meet the strict administrative requirements of Japan. From visas to My Number cards, get perfect results without compromising your privacy.
 
 一打の妥協もない、公的書類のための証明写真作成ツール。日本特有の厳しい規格に完全対応し、プライバシーを守りながら最高の仕上がりを提供します。
 
@@ -11,10 +11,10 @@ StandardID Japan is a high-utility, browser-based ID photo generator specificall
 
 ## 🎯 The Purpose (開発の目的)
 **English:**  
-This project was born when the creator needed an ID photo for the TOEIC exam in Japan. Existing solutions were either overpriced or required uploading sensitive facial data to mysterious servers. StandardID Japan was built to solve this: a free, reliable, and 100% private tool that anyone can use for official documents.
+This project was born when the creator needed an ID photo for the TOEIC exam in Japan. Existing solutions were either overpriced or required uploading sensitive facial data to mysterious servers. Japan ID Photo was built to solve this: a free, reliable, and 100% private tool that anyone can use for official documents.
 
 **日本語:**  
-このプロジェクトは、開発者が日本でTOEIC試験を受ける際、適切な証明写真を用意する手間に直面したことから始まりました。既存のサービスは高価であったり、機密性の高い顔データを外部サーバーにアップロードさせるものが多く、不安を感じました。StandardID Japanは、その課題を解決するために作られた、100%プライバシー重視の無料実用ツールです。
+このプロジェクトは、開発者が日本でTOEIC試験を受ける際、適切な証明写真を用意する手間に直面したことから始まりました。既存のサービスは高価であったり、機密性の高い顔データを外部サーバーにアップロードさせるものが多く、不安を感じました。Japan ID Photoは、その課題を解決するために作られた、100%プライバシー重視の無料実用ツールです。
 
 ---
 
@@ -41,12 +41,12 @@ AI was not just a coding tool, but a creative partner in defining the UX and loc
 ---
 
 ## 🚀 How to Use (使い方)
-1. Visit [StandardID Japan](https://jid.torus-studio.tech).
+1. Visit [Japan ID Photo](https://jid.torus-studio.tech).
 2. Choose your required photo size (e.g., TOEIC or My Number).
 3. Upload your photo (processed instantly on your browser).
 4. Adjust the crop and download your studio-quality result.
 
-1. [StandardID Japan](https://jid.torus-studio.tech) にアクセス。
+1. [Japan ID Photo](https://jid.torus-studio.tech) にアクセス。
 2. 必要なサイズ（TOEICやマイナンバー等）を選択。
 3. 写真をアップロード（ブラウザ内で即座に処理されます）。
 4. 枠に合わせて調整し、ダウンロード。
