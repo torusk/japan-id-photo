@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# standard-id-japan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+このリポジトリは Create React App ベースの証明写真作成アプリケーションです。
 
-## Available Scripts
+## 概要
 
-In the project directory, you can run:
+- フロントエンド: React（Create React App）
+- 多言語対応: `i18next` / `react-i18next` を使用
+- 画像処理: `konva` / `react-konva` と `canvas` を併用
+- ダウンロード: `file-saver` を使用して生成画像を保存
 
-### `npm start`
+このアプリはブラウザ内で画像を処理します。サーバにユーザーの画像を送信しません。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 対応言語
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 日本語 (`ja`)
+- 英語 (`en`)
+- 簡体中国語 (`zh-CN`)
+- 繁体中国語 (`zh-TW`)
+- 韓国語 (`ko`)
 
-### `npm test`
+翻訳ファイルは `src/locales/` にあります。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 主要なファイル構成
 
-### `npm run build`
+- `public/` - 静的アセット（`index.html`, favicon, `videos/` など）
+- `src/` - アプリ本体
+  - `App.js` - アプリ全体の制御（テンプレート、ビルド、ダウンロード等）
+  - `i18n.js` - i18next の初期化設定
+  - `components/` - 画面コンポーネント（`TemplateStep.js`, `UploadStep.js`, `CropStep.js`, `ResultStep.js`, `VideoIntro.js`, `StickyHeader.js` など）
+  - `locales/` - 各言語の JSON（`ja.json`, `en.json`, `ko.json`, `zh-CN.json`, `zh-TW.json`）
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ローカルでの開発
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+# 作業ディレクトリへ移動
+cd /path/to/id-photo-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 依存をインストール
+npm install
 
-### `npm run eject`
+# 開発サーバーを起動
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+ブラウザで `http://localhost:3000` を開きます。
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+テスト:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm test
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+本番ビルド:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`build/` ディレクトリ内のファイルをサーバの公開ディレクトリに配置して公開します（詳しくは `DEPLOYMENT.md` を参照）。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 多言語対応（i18n）のポイント
 
-### Code Splitting
+- 文言は `src/locales/<lang>.json` に定義されています。
+- 新しい文言キーを追加するときは、全言語ファイルに同名キーを追加してください（未翻訳の言語は英語や日本語をフォールバックにする運用ができます）。
+- UI 内での利用例: `t('buttons.upload')` のように `useTranslation` の `t` を用います。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## デプロイ（要点）
 
-### Analyzing the Bundle Size
+- 一度 `npm run build` を実行して生成される `build/` の中身だけをサーバーに置けば、Node を常時起動する必要はありません（静的ホスティング）。
+- React のクライアントサイドルーティングを使う場合、サーバ側で `index.html` へフォールバックする設定が必要です（Nginx の `try_files` 等）。
+- 環境別やサーバ別の詳細手順は `DEPLOYMENT.md` を参照してください。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 翻訳の追加手順（簡易）
 
-### Making a Progressive Web App
+1. `src/locales/<lang>.json` を編集して新しいキーを追加
+2. 開発サーバーで表示を確認（`npm start`）
+3. PR を作成してレビュー
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 依存ライブラリ（抜粋）
 
-### Advanced Configuration
+- `react`, `react-dom`
+- `react-i18next`, `i18next`, `i18next-browser-languagedetector`
+- `konva`, `react-konva`
+- `file-saver`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 備考
 
-### Deployment
+- 本番公開に必要なのは `build/` の中身のみです。ソースコード全体をサーバに置く必要はありません。
+- `DEPLOYMENT.md` を参照して、あなたのホスティング環境に合わせた手順を実行してください。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+作業ログ: UI の一部（`VideoIntro.js` の段落移動、`StickyHeader.js` のステップ文字列の i18n 化、各ロケールへの `intro_title`/`intro_description` の追加）を行いました。
