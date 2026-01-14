@@ -1,0 +1,62 @@
+{
+    "translation": {
+        "app_title": "StandardID Japan",
+        "privacy_notice": "写真はあなたのスマホやパソコンの中だけで処理されます。このアプリにも、外のどこにも保存されないので安心してくださいね ☺️",
+        "intro_title": "証明写真を簡単に作成",
+        "intro_description": "自分で撮影した写真から、証明写真を数クリックで作成できます！ マイナンバー、運転免許証、履歴書など、さまざまな日本で求められる証明写真サイズに対応しています。",
+        "step_template": "STEP 1: テンプレート選択",
+        "step_upload": "STEP 2: 画像アップロード",
+        "step_crop": "STEP 3: 画像クロップ",
+        "step_result": "STEP 4: 結果表示",
+        "templates": {
+            "license": "自動車運転免許用",
+            "resume": "履歴書・TOEIC用",
+            "mynumber": "マイナンバー用",
+            "select_description": "作成したい証明写真の種類を選んでください"
+        },
+        "upload": {
+            "instruction": "{{name}}（{{description}}）用の画像をアップロードしてください",
+            "click_or_drag": "クリックしてファイルを選択、または画像をここにドラッグ＆ドロップ",
+            "tips_title": "写真撮影のヒント:",
+            "tip_light": "明るい場所で撮影してください",
+            "tip_bg": "なるべく無地の背景を使用してください",
+            "tip_quality": "高解像度の写真を使用すると品質が向上します"
+        },
+        "buttons": {
+            "select": "選択する",
+            "upload": "写真をアップロード",
+            "crop": "この領域で切り抜く",
+            "download": "L判プリント用画像を保存",
+            "reset": "最初からやり直す",
+            "back": "戻る"
+        },
+        "crop": {
+            "instruction": "{{name}}（{{description}}）用に写真の位置を調整してください。",
+            "guide_text": "赤い枠を動かしたりサイズ変更して、顔が適切に収まるようにしてください。",
+            "zoom_out": "縮小",
+            "zoom_in": "拡大",
+            "zoom_label": "ズームレベル",
+            "tips_title": "証明写真ガイド:",
+            "tip_head": "頭頂部から顎までが写真の高さの70-80%になるように",
+            "tip_eye": "目線はまっすぐ前を向いて",
+            "tip_center": "顔の中心が写真の中央に来るよう調整"
+        },
+        "result": {
+            "actual_size_info": "↑実際のL判サイズ（89mm×127mm）で表示されています",
+            "layout_text": "L判サイズに{{name}}（{{description}}）が4枚配置されています",
+            "print_title": "プリント方法:",
+            "print_step1": "下の「画像をダウンロード」ボタンをクリックして画像を保存",
+            "print_step2": "コンビニのマルチコピー機にUSBメモリや、スマホのアプリで画像を転送",
+            "print_step3": "L判サイズでプリント（倍率100%、「ふちなし」設定はオフ）",
+            "print_note": "※コンビニのマルチコピー機では、JPEG形式のみ対応しています。このアプリで生成された画像はJPEG形式で保存されます。"
+        },
+        "messages": {
+            "loading": "処理中...",
+            "error_load": "画像の読み込みに失敗しました。別の画像を試してください。",
+            "error_read": "ファイルの読み込みに失敗しました。別のファイルを試してください。",
+            "error_crop": "画像の切り抜きに失敗しました。もう一度お試しください。",
+            "error_layout": "レイアウト生成中にエラーが発生しました。",
+            "video_unsupported": "お使いのブラウザは動画の再生に対応していません。"
+        }
+    }
+}

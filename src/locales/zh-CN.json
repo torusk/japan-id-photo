@@ -1,0 +1,62 @@
+{
+    "translation": {
+        "app_title": "StandardID Japan",
+        "privacy_notice": "您的照片仅在手机或电脑本地处理，本应用及外部均不会保存，请放心使用 ☺️",
+        "intro_title": "轻松制作证件照",
+        "intro_description": "只需几次点击，即可从您自己拍摄的照片中创建专业级的证件照！支持日本常用的各种证件照尺寸，例如个人编号（My Number）、驾照和简历用照。",
+        "step_template": "第一步：选择模板",
+        "step_upload": "第二步：上传照片",
+        "step_crop": "第三步：裁剪照片",
+        "step_result": "第四步：查看结果",
+        "templates": {
+            "license": "驾照用",
+            "resume": "简历 / TOEIC用",
+            "mynumber": "个人编号卡用",
+            "select_description": "请选择您要创建的证件照类型。"
+        },
+        "upload": {
+            "instruction": "请上传用于{{name}}（{{description}}）的图片",
+            "click_or_drag": "点击选择文件，或将图片拖放至此处",
+            "tips_title": "照片拍摄提示：",
+            "tip_light": "请在明亮的地方拍摄",
+            "tip_bg": "请尽量使用纯色背景",
+            "tip_quality": "使用高分辨率的照片可以提高打印质量"
+        },
+        "buttons": {
+            "select": "选择",
+            "upload": "上传照片",
+            "crop": "完成裁剪",
+            "download": "下载 L版打印照片",
+            "reset": "重新开始",
+            "back": "返回"
+        },
+        "crop": {
+            "instruction": "请调整{{name}}（{{description}}）的照片位置。",
+            "guide_text": "移动红框或调整其大小，使脸部处于合适的位置。",
+            "zoom_out": "缩小",
+            "zoom_in": "放大",
+            "zoom_label": "缩放级别",
+            "tips_title": "证件照指南：",
+            "tip_head": "从头顶到下巴的距离应占照片高度的70-80%",
+            "tip_eye": "眼睛直视前方",
+            "tip_center": "将脸部居中调整"
+        },
+        "result": {
+            "actual_size_info": "↑ 以实际 L版尺寸 (89mm x 127mm) 显示",
+            "layout_text": "在 L版尺寸照片上已放置 4 张 {{name}} ({{description}})",
+            "print_title": "打印方法：",
+            "print_step1": "点击下方的“下载图片”按钮保存图片",
+            "print_step2": "使用 USB 闪存盘或智能手机应用将图片传输至便利店的多功能复印机",
+            "print_step3": "以 L版尺寸打印（倍率 100%，关闭“无边距”设置）",
+            "print_note": "* 便利店的多功能复印机仅支持 JPEG 格式。此应用生成的图片将以 JPEG 格式保存。"
+        },
+        "messages": {
+            "loading": "处理中...",
+            "error_load": "读取图片失败，请重试。",
+            "error_read": "读取文件失败，请重试。",
+            "error_crop": "裁剪图片失败，请重试。",
+            "error_layout": "生成布局时出错。",
+            "video_unsupported": "您的浏览器不支持视频播放。"
+        }
+    }
+}

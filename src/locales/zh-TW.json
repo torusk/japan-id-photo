@@ -1,0 +1,62 @@
+{
+    "translation": {
+        "app_title": "StandardID Japan",
+        "privacy_notice": "您的照片僅在手機或電腦本地處理，本應用及外部均不會保存，請放心使用 ☺️",
+        "intro_title": "輕鬆製作證件照",
+        "intro_description": "只需幾次點擊，即可從您自己拍攝的照片中建立專業品質的證件照！支援日本常用的各種證件照尺寸，例如個人編號（My Number）、駕照與履歷用照。",
+        "step_template": "第一步：選擇模板",
+        "step_upload": "第二步：上傳照片",
+        "step_crop": "第三步：裁剪照片",
+        "step_result": "第四步：查看結果",
+        "templates": {
+            "license": "駕照用",
+            "resume": "履歷 / TOEIC用",
+            "mynumber": "個人編號卡用",
+            "select_description": "請選擇您要創建的證件照類型。"
+        },
+        "upload": {
+            "instruction": "請上傳用於{{name}}（{{description}}）的圖片",
+            "click_or_drag": "點擊選擇文件，或將圖片拖放至此處",
+            "tips_title": "照片拍攝提示：",
+            "tip_light": "請在明亮的地方拍攝",
+            "tip_bg": "請盡量使用純色背景",
+            "tip_quality": "使用高解析度的照片可以提高列印品質"
+        },
+        "buttons": {
+            "select": "選擇",
+            "upload": "上傳照片",
+            "crop": "完成裁剪",
+            "download": "下載 L版列印照片",
+            "reset": "重新開始",
+            "back": "返回"
+        },
+        "crop": {
+            "instruction": "請調整{{name}}（{{description}}）的照片位置。",
+            "guide_text": "移動紅框或調整其大小，使臉部處於合適的位置。",
+            "zoom_out": "縮小",
+            "zoom_in": "放大",
+            "zoom_label": "縮放級別",
+            "tips_title": "證件照指南：",
+            "tip_head": "從頭頂到下巴的距離應佔照片高度的70-80%",
+            "tip_eye": "眼睛直視前方",
+            "tip_center": "將臉部居中調整"
+        },
+        "result": {
+            "actual_size_info": "↑ 以實際 L版尺寸 (89mm x 127mm) 顯示",
+            "layout_text": "在 L版尺寸照片上已放置 4 張 {{name}} ({{description}})",
+            "print_title": "列印方法：",
+            "print_step1": "點擊下方的「下載圖片」按鈕儲存圖片",
+            "print_step2": "使用 USB 隨身碟或智慧型手機應用程式將圖片傳輸至便利商店的多功能影印機",
+            "print_step3": "以 L版尺寸列印（倍率 100%，關閉「無邊距」設定）",
+            "print_note": "* 便利商店的多功能影印機僅支援 JPEG 格式。此應用程式產生的圖片將以 JPEG 格式儲存。"
+        },
+        "messages": {
+            "loading": "處理中...",
+            "error_load": "讀取圖片失敗，請重試。",
+            "error_read": "讀取文件失敗，請重試。",
+            "error_crop": "裁剪圖片失敗，請重試。",
+            "error_layout": "生成佈局時出錯。",
+            "video_unsupported": "您的瀏覽器不支援影片播放。"
+        }
+    }
+}

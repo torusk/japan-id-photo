@@ -1,0 +1,62 @@
+{
+    "translation": {
+        "app_title": "StandardID Japan",
+        "privacy_notice": "사진은 사용하는 스마트폰이나 PC 안에서만 처리됩니다. 이 앱이나 외부 어디에도 저장되지 않으니 안심하세요! ☺️",
+        "intro_title": "증명사진을 간편하게 만들기",
+        "intro_description": "직접 촬영한 사진으로도 몇 번의 클릭만으로 전문가 수준의 증명사진을 만들 수 있습니다! 마이넘버, 운전면허증, 이력서 등 일본에서 요구되는 다양한 증명사진 사이즈를 지원합니다.",
+        "step_template": "1단계: 템플릿 선택",
+        "step_upload": "2단계: 사진 업로드",
+        "step_crop": "3단계: 사진 자르기",
+        "step_result": "4단계: 결과 확인",
+        "templates": {
+            "license": "운전면허용",
+            "resume": "이력서 / TOEIC용",
+            "mynumber": "마이넘버 카드용",
+            "select_description": "작성하고 싶은 증명사진 종류를 선택해 주세요."
+        },
+        "upload": {
+            "instruction": "{{name}}({{description}})용 이미지를 업로드해 주세요",
+            "click_or_drag": "클릭하여 파일을 선택하거나 이미지를 여기로 드래그 앤 드롭",
+            "tips_title": "사진 촬영 팁:",
+            "tip_light": "밝은 곳에서 촬영해 주세요",
+            "tip_bg": "가급적 단색 배경을 사용해 주세요",
+            "tip_quality": "고해상도 사진을 사용하면 품질이 향상됩니다"
+        },
+        "buttons": {
+            "select": "선택",
+            "upload": "사진 업로드",
+            "crop": "자르기 완료",
+            "download": "L판 인화 이미지 저장",
+            "reset": "처음부터 다시 하기",
+            "back": "뒤로"
+        },
+        "crop": {
+            "instruction": "{{name}}({{description}})용 증명사진 위치를 조정해 주세요.",
+            "guide_text": "빨간 테두리를 움직이거나 크기를 조정하여 얼굴이 적절하게 들어가도록 하세요.",
+            "zoom_out": "축소",
+            "zoom_in": "확대",
+            "zoom_label": "줌 레벨",
+            "tips_title": "증명사진 가이드:",
+            "tip_head": "머리끝부터 턱까지가 사진 높이의 70-80%가 되도록",
+            "tip_eye": "시선은 정면을 향하게",
+            "tip_center": "얼굴의 중심이 사진의 중앙에 오도록 조정"
+        },
+        "result": {
+            "actual_size_info": "↑ 실제 L판 사이즈(89mm x 127mm)로 표시되고 있습니다",
+            "layout_text": "L판 사이즈에 {{name}}({{description}})이 4장 배치되어 있습니다",
+            "print_title": "인쇄 방법:",
+            "print_step1": "아래의 '이미지 다운로드' 버튼을 클릭하여 이미지를 저장",
+            "print_step2": "편의점 멀티 복사기에 USB 메모리나 스마트폰 앱으로 이미지를 전송",
+            "print_step3": "L판 사이즈로 인쇄 (배율 100%, '테두리 없음' 설정 해제)",
+            "print_note": "* 편의점 멀티 복사기는 JPEG 형식만 지원합니다. 이 앱에서 생성된 이미지는 JPEG 형식으로 저장됩니다."
+        },
+        "messages": {
+            "loading": "처리 중...",
+            "error_load": "이미지를 불러오지 못했습니다. 다른 이미지를 시도해 주세요.",
+            "error_read": "파일을 읽지 못했습니다. 다른 파일을 시도해 주세요.",
+            "error_crop": "이미지 자르기에 실패했습니다. 다시 시도해 주세요.",
+            "error_layout": "레이아웃 생성 중 오류가 발생했습니다.",
+            "video_unsupported": "사용 중인 브라우저는 동영상 재생을 지원하지 않습니다."
+        }
+    }
+}
